@@ -5357,9 +5357,6 @@ p {
     display: block !important;
   }
 
-  .hero, .page-header {
-    margin-top: 70px !important;
-  }
 
   .hero-left {
     align-items: flex-start !important;
