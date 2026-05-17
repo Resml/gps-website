@@ -2018,15 +2018,16 @@ p {
   }
 
   .navbar .container {
-    flex-wrap: wrap;
-    position: relative
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    height: 100% !important;
+    flex-wrap: nowrap !important;
+    position: relative;
   }
 
   .nav-cta.active {
-    display: flex;
-    padding: 16px;
-    background: #fff;
-    gap: 10px
+    display: none !important;
   }
 
   .services-grid {
