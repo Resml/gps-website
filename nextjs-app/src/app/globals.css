@@ -5348,6 +5348,10 @@ p {
     max-width: 100% !important;
   }
 
+  .nav-logo img {
+    height: 48px !important;
+  }
+
   .quick-bar {
     display: block !important;
   }
