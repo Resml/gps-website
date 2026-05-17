@@ -5335,7 +5335,7 @@ p {
     right: 0 !important;
     z-index: 2000 !important;
     background: #fff !important;
-    height: 70px !important;
+    height: 80px !important;
     display: flex !important;
     align-items: center !important;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
@@ -5350,7 +5350,7 @@ p {
   }
 
   .nav-logo img {
-    height: 48px !important;
+    height: 60px !important;
   }
 
   .quick-bar {
