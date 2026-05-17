@@ -5395,4 +5395,70 @@ p {
     margin-left: 0 !important;
     width: 100% !important;
   }
+
+  /* Why Choose GPS? & Trusted Across Key Sectors Mobile Tuning */
+  .srv-why-section {
+    padding: 60px 0 !important;
+  }
+
+  .srv-title-dark {
+    margin-bottom: 24px !important;
+  }
+
+  .srv-list-card {
+    padding: 16px !important;
+    gap: 12px !important;
+    border-radius: 12px !important;
+  }
+
+  .srv-list-check {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .srv-list-check svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .srv-list-card h4 {
+    font-size: 1rem !important;
+  }
+
+  .srv-list-card p {
+    font-size: 0.85rem !important;
+  }
+
+  .srv-industries-box {
+    padding: 32px 20px !important;
+    border-radius: 16px !important;
+  }
+
+  .srv-industries-box h3 {
+    font-size: 1.5rem !important;
+  }
+
+  .srv-industries-box p {
+    font-size: 0.9rem !important;
+    margin-bottom: 24px !important;
+  }
+
+  .srv-ind-tags {
+    gap: 8px !important;
+    margin-bottom: 28px !important;
+  }
+
+  .srv-ind-tag {
+    padding: 6px 12px !important;
+    font-size: 0.75rem !important;
+  }
+
+  .srv-cta-box {
+    padding: 16px !important;
+    border-radius: 12px !important;
+  }
+
+  .srv-cta-box h4 {
+    font-size: 0.95rem !important;
+  }
 }
