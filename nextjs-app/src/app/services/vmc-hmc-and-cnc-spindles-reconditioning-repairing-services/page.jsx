@@ -1,5 +1,7 @@
 import PageHeader from '@/components/layout/PageHeader';
 import VmcServiceDetails from '@/components/services/vmc-hmc/VmcServiceDetails';
+import FAQ from '@/components/home/FAQ';
+import CTASection from '@/components/home/CTASection';
 import ScrollReveal from '@/components/layout/ScrollReveal';
 
 export const metadata = {
@@ -16,6 +18,8 @@ export default function VmcHmcServicePage() {
         breadcrumb="VMC / HMC / CNC Spindles Repair"
       />
       <VmcServiceDetails />
+      <FAQ />
+      <CTASection />
     </main>
   );
 }

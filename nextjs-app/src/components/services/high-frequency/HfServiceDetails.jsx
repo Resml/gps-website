@@ -166,14 +166,13 @@ export default function HfServiceDetails() {
       </section>
 
       {/* ── INDUSTRIES & APPLICATIONS — THEME-MATCHED ── */}
-      <section style={{ background: 'var(--navy)', padding: '90px 0', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'radial-gradient(rgba(255,255,255,0.03) 1px,transparent 1px)', backgroundSize: '32px 32px', pointerEvents: 'none' }} />
-        <div style={{ position: 'absolute', top: '-100px', right: '-100px', width: '400px', height: '400px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(234,88,12,0.12) 0%, transparent 70%)', pointerEvents: 'none' }} />
+      <section style={{ background: '#fff', padding: '90px 0', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', top: '-100px', right: '-100px', width: '400px', height: '400px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(234,88,12,0.08) 0%, transparent 70%)', pointerEvents: 'none' }} />
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div className="reveal" style={{ textAlign: 'center', marginBottom: '56px' }}>
-            <span style={{ display: 'inline-block', background: 'rgba(234,88,12,0.2)', border: '1px solid rgba(234,88,12,0.4)', color: '#FED7AA', fontSize: '12px', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', padding: '6px 16px', borderRadius: '50px', marginBottom: '16px' }}>Applications We Support</span>
-            <h2 style={{ color: '#fff', marginBottom: '12px' }}>Industries &amp; <span style={{ color: '#FDBA74' }}>Applications</span></h2>
-            <p style={{ maxWidth: '600px', margin: '0 auto', color: 'rgba(255,255,255,0.6)', fontSize: '16px' }}>We cater to diverse industries requiring precision and efficiency in high-frequency spindle performance.</p>
+            <span className="ab-tag" style={{ marginBottom: '16px' }}>Applications We Support</span>
+            <h2 style={{ color: 'var(--navy)', marginBottom: '12px' }}>Industries &amp; <span style={{ color: 'var(--orange)' }}>Applications</span></h2>
+            <p style={{ maxWidth: '600px', margin: '0 auto', color: 'var(--muted)', fontSize: '16px' }}>We cater to diverse industries requiring precision and efficiency in high-frequency spindle performance.</p>
           </div>
 
           <div className="res-grid-3">
@@ -183,39 +182,36 @@ export default function HfServiceDetails() {
                 onMouseLeave={() => setHoveredApp(null)}
                 style={{
                   position: 'relative',
-                  background: hoveredApp === i ? 'rgba(234,88,12,0.12)' : 'rgba(255,255,255,0.05)',
-                  border: hoveredApp === i ? '1px solid rgba(234,88,12,0.6)' : '1px solid rgba(255,255,255,0.1)',
+                  background: '#fff',
+                  border: '1px solid var(--border)',
                   borderRadius: '16px',
                   padding: '32px 24px',
                   textAlign: 'center',
                   cursor: 'default',
-                  backdropFilter: 'blur(8px)',
                   transition: 'all 0.3s ease',
                   transform: hoveredApp === i ? 'translateY(-6px)' : 'translateY(0)',
-                  boxShadow: hoveredApp === i ? '0 16px 40px rgba(234,88,12,0.2)' : 'none',
+                  boxShadow: hoveredApp === i ? '0 16px 40px rgba(234,88,12,0.1)' : 'var(--shadow-sm)',
                   overflow: 'hidden',
                 }}>
-                {/* Orange glow blob */}
-                <div style={{ position: 'absolute', top: '-30px', right: '-30px', width: '120px', height: '120px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(234,88,12,0.2) 0%, transparent 70%)', opacity: hoveredApp === i ? 1 : 0, transition: 'opacity 0.3s', pointerEvents: 'none' }} />
 
                 {/* Icon */}
                 <div style={{
                   width: '64px', height: '64px', borderRadius: '14px',
-                  background: hoveredApp === i ? 'rgba(234,88,12,0.25)' : 'rgba(255,255,255,0.08)',
-                  border: hoveredApp === i ? '1px solid rgba(234,88,12,0.5)' : '1px solid rgba(255,255,255,0.12)',
+                  background: 'var(--off-white)',
+                  border: '1px solid var(--border)',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   margin: '0 auto 18px',
                   transition: 'all 0.3s',
-                  color: hoveredApp === i ? '#EA580C' : 'rgba(255,255,255,0.7)',
+                  color: hoveredApp === i ? 'var(--orange)' : 'var(--text)',
                   transform: hoveredApp === i ? 'scale(1.1)' : 'scale(1)',
                 }}>
                   {app.svg}
                 </div>
 
-                <h4 style={{ fontSize: '14px', fontWeight: 700, color: hoveredApp === i ? '#fff' : 'rgba(255,255,255,0.8)', lineHeight: 1.4, margin: 0, transition: 'color 0.3s' }}>{app.label}</h4>
+                <h4 style={{ fontSize: '14px', fontWeight: 700, color: hoveredApp === i ? 'var(--orange)' : 'var(--text)', lineHeight: 1.4, margin: 0, transition: 'color 0.3s' }}>{app.label}</h4>
 
                 {/* Bottom orange bar */}
-                <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '2px', background: 'linear-gradient(90deg, transparent, #EA580C, transparent)', opacity: hoveredApp === i ? 1 : 0, transition: 'opacity 0.3s' }} />
+                <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '3px', background: 'var(--gradient-orange)', opacity: hoveredApp === i ? 1 : 0, transition: 'opacity 0.3s' }} />
               </div>
             ))}
           </div>
@@ -238,7 +234,7 @@ export default function HfServiceDetails() {
                       </svg>
                     </div>
                     <div>
-                      <h4>{item.icon} {item.title}</h4>
+                      <h4>{item.title}</h4>
                       <p>{item.desc}</p>
                     </div>
                   </div>
@@ -264,7 +260,7 @@ export default function HfServiceDetails() {
                     Message on WhatsApp
                   </a>
                   <a href="tel:+918484898144" className="btn btn-dark" style={{ marginTop: '10px', width: '100%', justifyContent: 'center' }}>
-                    📞 +91 8484898144 (Sachin)
+                    📞 +91 8484898144
                   </a>
                 </div>
               </div>

@@ -1,5 +1,7 @@
 import PageHeader from '@/components/layout/PageHeader';
 import HfServiceDetails from '@/components/services/high-frequency/HfServiceDetails';
+import FAQ from '@/components/home/FAQ';
+import CTASection from '@/components/home/CTASection';
 import ScrollReveal from '@/components/layout/ScrollReveal';
 
 export const metadata = {
@@ -16,6 +18,8 @@ export default function HfGrindingServicePage() {
         breadcrumb="High-Frequency Grinding Spindles"
       />
       <HfServiceDetails />
+      <FAQ />
+      <CTASection />
     </main>
   );
 }
