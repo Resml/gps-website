@@ -116,7 +116,7 @@ export default function Header() {
           <ul className={`nav-menu ${menuOpen ? 'active' : ''}`} id="navMenu">
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about-gps">About Us</Link></li>
-            <li className={`dropdown ${activeDropdown === 'services' ? 'active-mobile' : ''}`}
+            <li className={`dropdown ${activeDropdown === 'services' ? 'active' : ''}`}
                 onMouseLeave={() => setActiveDropdown(null)}>
               <Link href="#" onClick={(e) => toggleDropdown(e, 'services')}>
                 Services <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -152,7 +152,7 @@ export default function Header() {
                 </div>
               </div>
             </li>
-            <li className={`dropdown ${activeDropdown === 'resources' ? 'active-mobile' : ''}`}
+            <li className={`dropdown ${activeDropdown === 'resources' ? 'active' : ''}`}
                 onMouseLeave={() => setActiveDropdown(null)}>
               <Link href="#" onClick={(e) => toggleDropdown(e, 'resources')}>
                 Resources <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

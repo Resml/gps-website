@@ -529,9 +529,15 @@ p {
   height: 16px;
 }
 
-.dropdown:hover .dropdown-menu,
-.dropdown-menu:hover {
-  display: block
+@media (hover: hover) {
+  .dropdown:hover .dropdown-menu,
+  .dropdown-menu:hover {
+    display: block
+  }
+}
+
+.dropdown.active .dropdown-menu {
+  display: block !important;
 }
 
 .dropdown.force-close .dropdown-menu {
@@ -2004,7 +2010,7 @@ p {
     display: none;
   }
 
-  .dropdown.active-mobile .dropdown-menu {
+  .dropdown.active .dropdown-menu {
     display: block;
   }
 
@@ -2012,7 +2018,7 @@ p {
     transition: transform 0.3s ease;
   }
 
-  .dropdown.active-mobile > a > svg {
+  .dropdown.active > a > svg {
     transform: rotate(180deg);
   }
 
