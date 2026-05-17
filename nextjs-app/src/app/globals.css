@@ -5357,6 +5357,11 @@ p {
     display: block !important;
   }
 
+  .hero-content {
+    margin-top: 0 !important;
+    padding-top: 24px !important;
+  }
+
 
   .hero-left {
     align-items: flex-start !important;
