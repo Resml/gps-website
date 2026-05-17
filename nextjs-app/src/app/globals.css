@@ -1913,6 +1913,11 @@ p {
 
 /* RESPONSIVE */
 @media(max-width:1024px) {
+  .hero-content {
+    margin-top: 0 !important;
+    padding-top: 60px !important;
+  }
+
   .hero-content .container {
     grid-template-columns: 1fr
   }
