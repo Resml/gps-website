@@ -5474,6 +5474,11 @@ p {
 
 /* MOBILE RESPONSIVENESS FIXES */
 @media (max-width: 768px) {
+  .back-to-top {
+    bottom: 92px !important;
+    left: 20px !important;
+  }
+
   .navbar {
     position: sticky !important;
     top: 0 !important;
