@@ -221,6 +221,41 @@ export default function InteractiveChatbot() {
 
   return (
     <>
+      <style>{`
+        @keyframes chat-slide-up {
+          0% { opacity: 0; transform: scale(0.9) translateY(40px); }
+          100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .typing-dot {
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          background: var(--muted);
+          border-radius: 50%;
+          margin: 0 2px;
+          animation: typing 1.4s infinite ease-in-out both;
+        }
+        .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+        .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+        @keyframes typing {
+          0%, 80%, 100% { transform: scale(0); }
+          40% { transform: scale(1); }
+        }
+        @media (max-width: 768px) {
+          /* Move chatbot bubble & window up on mobile to avoid overlapping sticky CTA bar */
+          .chatbot-toggle {
+            bottom: 92px !important;
+            right: 20px !important;
+          }
+          .chatbot-window {
+            width: calc(100vw - 40px) !important;
+            max-width: 360px !important;
+            right: 20px !important;
+            bottom: 165px !important;
+          }
+        }
+      `}</style>
+
       {/* Chat Bubble Toggle */}
       <button
         onClick={() => setIsOpen(!isOpen)}
@@ -279,36 +314,6 @@ export default function InteractiveChatbot() {
           animation: 'chat-slide-up 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards',
           transformOrigin: 'bottom right'
         }}>
-
-          <style>{`
-            @keyframes chat-slide-up {
-              0% { opacity: 0; transform: scale(0.9) translateY(40px); }
-              100% { opacity: 1; transform: scale(1) translateY(0); }
-            }
-            .typing-dot {
-              display: inline-block;
-              width: 6px;
-              height: 6px;
-              background: var(--muted);
-              border-radius: 50%;
-              margin: 0 2px;
-              animation: typing 1.4s infinite ease-in-out both;
-            }
-            .typing-dot:nth-child(1) { animation-delay: -0.32s; }
-            .typing-dot:nth-child(2) { animation-delay: -0.16s; }
-            @keyframes typing {
-              0%, 80%, 100% { transform: scale(0); }
-              40% { transform: scale(1); }
-            }
-            @media (max-width: 480px) {
-              /* Responsive adjustments for mobile */
-              .chatbot-window {
-                width: calc(100vw - 40px) !important;
-                right: 20px !important;
-                bottom: 160px !important;
-              }
-            }
-          `}</style>
 
           {/* Chat Header */}
           <div style={{
