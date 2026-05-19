@@ -35,8 +35,17 @@ const itemVariants = {
 };
 
 export default function Metrics() {
+  const sectionRef = useRef(null);
+  const isSectionInView = useInView(sectionRef, { once: true, margin: "-100px" });
+
+  useEffect(() => {
+    if (isSectionInView) {
+      window.dispatchEvent(new CustomEvent('open-chatbot'));
+    }
+  }, [isSectionInView]);
+
   return (
-    <section className="metrics-section">
+    <section ref={sectionRef} className="metrics-section">
       <div className="container">
         <motion.div
           className="metrics-grid"

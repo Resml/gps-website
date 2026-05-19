@@ -119,6 +119,17 @@ export default function InteractiveChatbot() {
   const [userData, setUserData] = useState({});
   const messagesEndRef = useRef(null);
 
+  // Open chatbot via external event (e.g. scrolling past metrics)
+  useEffect(() => {
+    const handleOpenChat = () => {
+      setIsOpen(true);
+    };
+    window.addEventListener('open-chatbot', handleOpenChat);
+    return () => {
+      window.removeEventListener('open-chatbot', handleOpenChat);
+    };
+  }, []);
+
   // Initialize chat
   useEffect(() => {
     if (isOpen && messages.length === 0) {
