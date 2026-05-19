@@ -117,12 +117,20 @@ export default function InteractiveChatbot() {
   const [isTyping, setIsTyping] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const [userData, setUserData] = useState({});
+  const [unreadCount, setUnreadCount] = useState(0);
+  const [showTooltip, setShowTooltip] = useState(false);
   const messagesEndRef = useRef(null);
 
   // Open chatbot via external event (e.g. scrolling past metrics)
   useEffect(() => {
     const handleOpenChat = () => {
-      setIsOpen(true);
+      const isMobile = window.innerWidth <= 768;
+      if (isMobile) {
+        setUnreadCount(1);
+        setShowTooltip(true);
+      } else {
+        setIsOpen(true);
+      }
     };
     window.addEventListener('open-chatbot', handleOpenChat);
     return () => {
@@ -237,6 +245,10 @@ export default function InteractiveChatbot() {
           0% { opacity: 0; transform: scale(0.9) translateY(40px); }
           100% { opacity: 1; transform: scale(1) translateY(0); }
         }
+        @keyframes tooltip-bounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-4px); }
+        }
         .typing-dot {
           display: inline-block;
           width: 6px;
@@ -264,12 +276,55 @@ export default function InteractiveChatbot() {
             right: 20px !important;
             bottom: 165px !important;
           }
+          .chatbot-tooltip-bubble {
+            bottom: 100px !important;
+            right: 90px !important;
+          }
         }
       `}</style>
 
+      {/* Chat Tooltip Preview (shown only when closed and showTooltip is true) */}
+      {!isOpen && showTooltip && (
+        <div 
+          onClick={() => {
+            setIsOpen(true);
+            setUnreadCount(0);
+            setShowTooltip(false);
+          }}
+          className="chatbot-tooltip-bubble"
+          style={{
+            position: 'fixed',
+            bottom: '36px',
+            right: '98px',
+            background: 'var(--navy)',
+            color: '#fff',
+            padding: '10px 16px',
+            borderRadius: '16px 16px 0 16px',
+            fontSize: '13px',
+            fontWeight: 600,
+            whiteSpace: 'nowrap',
+            boxShadow: '0 8px 24px rgba(15,23,42,0.2)',
+            zIndex: 9999,
+            cursor: 'pointer',
+            border: '1px solid rgba(255,255,255,0.1)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+            animation: 'tooltip-bounce 2s infinite ease-in-out'
+          }}
+        >
+          <span style={{ display: 'inline-block', width: '8px', height: '8px', background: '#22C55E', borderRadius: '50%' }}></span>
+          Hi! Need help with your spindles?
+        </div>
+      )}
+
       {/* Chat Bubble Toggle */}
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => {
+          setIsOpen(!isOpen);
+          setUnreadCount(0);
+          setShowTooltip(false);
+        }}
         className="chatbot-toggle"
         style={{
           position: 'fixed',
@@ -300,6 +355,29 @@ export default function InteractiveChatbot() {
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: '32px', height: '32px' }}>
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
           </svg>
+        )}
+
+        {/* Notification Badge */}
+        {!isOpen && unreadCount > 0 && (
+          <span className="chatbot-badge" style={{
+            position: 'absolute',
+            top: '-2px',
+            right: '-2px',
+            background: '#EF4444',
+            color: '#fff',
+            fontSize: '11px',
+            fontWeight: 800,
+            borderRadius: '50%',
+            width: '20px',
+            height: '20px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            boxShadow: '0 2px 8px rgba(239,68,68,0.5)',
+            zIndex: 10000
+          }}>
+            1
+          </span>
         )}
       </button>
 
