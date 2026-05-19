@@ -22,13 +22,10 @@ export default function BeforeAfter() {
               height: '100%',
               boxSizing: 'border-box'
             }}>
-              <h3 style={{ color: '#dc2626', marginBottom: '15px', fontSize: '20px', fontWeight: '700' }}>
-                Before: Broken &amp; Rusty
-              </h3>
               <img
-                src="/images/spindle-before.webp"
+                src="/images/before.png"
                 alt="Damaged spindle before repair"
-                style={{ width: '100%', borderRadius: '8px', objectFit: 'cover', maxHeight: '260px' }}
+                style={{ width: '100%', borderRadius: '8px', objectFit: 'cover', maxHeight: '350px' }}
               />
               <p style={{ marginTop: '15px', fontSize: '14px', color: 'var(--muted)' }}>
                 Severely damaged bearings, rust accumulation, and loss of precision.
@@ -47,13 +44,10 @@ export default function BeforeAfter() {
               height: '100%',
               boxSizing: 'border-box'
             }}>
-              <h3 style={{ color: '#16a34a', marginBottom: '15px', fontSize: '20px', fontWeight: '700' }}>
-                After: OEM Restored
-              </h3>
               <img
-                src="/images/spindle-after.webp"
+                src="/images/after.png"
                 alt="Spindle after OEM restoration"
-                style={{ width: '100%', borderRadius: '8px', objectFit: 'cover', maxHeight: '260px' }}
+                style={{ width: '100%', borderRadius: '8px', objectFit: 'cover', maxHeight: '350px' }}
               />
               <p style={{ marginTop: '15px', fontSize: '14px', color: 'var(--muted)' }}>
                 Fully reconditioned, dynamically balanced, and tested to perfection.

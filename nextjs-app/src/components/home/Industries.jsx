@@ -54,6 +54,9 @@ export default function Industries() {
             </div>
           ))}
         </div>
+        <div className="text-center reveal" style={{ marginTop: '50px' }}>
+          <a href="/industries-we-serve" className="btn btn-outline">View All Industries We Serve →</a>
+        </div>
       </div>
     </section>
   );
