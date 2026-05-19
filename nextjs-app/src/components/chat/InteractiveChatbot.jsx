@@ -82,8 +82,8 @@ const chatFlow = {
   contact_menu: {
     message: "We're here to help! Who would you like to speak with?",
     options: [
-      { label: "Sachin (Spindle Repair)", action: "call", phone: "+918484898144" },
-      { label: "Anil (Manufacturing)", action: "call", phone: "+919764252188" },
+      { label: "+91 8484898144 (Spindle Repair)", action: "call", phone: "+918484898144" },
+      { label: "+91 97642 52188 (Manufacturing)", action: "call", phone: "+919764252188" },
       { label: "Chat on WhatsApp", action: "whatsapp_general" },
       { label: "Go Back", next: "start" }
     ]

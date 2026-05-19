@@ -183,7 +183,7 @@ export default function MillingDetails() {
                     Send Enquiry on WhatsApp
                   </a>
                   <a href="tel:+918484898144" className="btn btn-dark" style={{ marginTop: '10px', width: '100%', justifyContent: 'center' }}>
-                    📞 +91 8484898144 (Sachin)
+                    📞 +91 8484898144
                   </a>
                 </div>
               </div>

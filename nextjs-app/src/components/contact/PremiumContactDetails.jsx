@@ -64,11 +64,10 @@ export default function PremiumContactDetails() {
                 background: '#fff', borderRadius: '20px', padding: '24px', border: '1px solid var(--border)', transition: 'all 0.3s ease', display: 'block'
               }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-4px)'} onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
                 <h5 style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--orange)', marginBottom: '12px', fontWeight: 700 }}>Reconditioning</h5>
-                <h4 style={{ fontSize: '18px', color: 'var(--navy)', marginBottom: '4px', fontWeight: 700 }}>Sachin Kuchekar</h4>
-                <p style={{ color: 'var(--muted)', fontSize: '15px', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: '16px', height: '16px' }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                <h4 style={{ fontSize: '18px', color: 'var(--navy)', marginBottom: '4px', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: '20px', height: '20px', color: 'var(--orange)' }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                   +91 8484898144
-                </p>
+                </h4>
               </a>
 
               {/* Manufacturing Contact */}
@@ -76,11 +75,10 @@ export default function PremiumContactDetails() {
                 background: '#fff', borderRadius: '20px', padding: '24px', border: '1px solid var(--border)', transition: 'all 0.3s ease', display: 'block'
               }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-4px)'} onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
                 <h5 style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--orange)', marginBottom: '12px', fontWeight: 700 }}>Manufacturing</h5>
-                <h4 style={{ fontSize: '18px', color: 'var(--navy)', marginBottom: '4px', fontWeight: 700 }}>Anil Vakude</h4>
-                <p style={{ color: 'var(--muted)', fontSize: '15px', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: '16px', height: '16px' }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                <h4 style={{ fontSize: '18px', color: 'var(--navy)', marginBottom: '4px', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: '20px', height: '20px', color: 'var(--orange)' }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                   +91 97642 52188
-                </p>
+                </h4>
               </a>
 
             </div>
