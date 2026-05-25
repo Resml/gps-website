@@ -20,7 +20,7 @@ export default function AboutPage() {
       <ScrollReveal />
       <PageHeader
         title="About Us"
-        subtitle="Pune's most trusted CNC, VMC &amp; HMC spindle repair specialists since 2017 — 900+ clients, 1-year warranty, 24×7 emergency support."
+        subtitle="Pune's most trusted CNC, VMC &amp; HMC spindle repair specialists since 2017 — 3000+ clients, 5000+ completed projects, 1-year warranty, 24×7 emergency support."
         breadcrumb="About Us"
       />
       <AboutCompany />

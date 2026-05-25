@@ -8,7 +8,6 @@ import Services from '@/components/home/Services';
 import Process from '@/components/home/Process';
 import WhyGPS from '@/components/home/WhyGPS';
 import Gallery from '@/components/home/Gallery';
-import Brands from '@/components/home/Brands';
 import Clients from '@/components/home/Clients';
 import Industries from '@/components/home/Industries';
 import BeforeAfter from '@/components/home/BeforeAfter';
@@ -44,7 +43,6 @@ export default function Home() {
       <Process />
       <WhyGPS />
       <Gallery />
-      <Brands />
       <Clients />
       <Industries />
       <BeforeAfter />

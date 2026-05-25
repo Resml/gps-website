@@ -82,8 +82,8 @@ const chatFlow = {
   contact_menu: {
     message: "We're here to help! Who would you like to speak with?",
     options: [
-      { label: "+91 8484898144 (Spindle Repair)", action: "call", phone: "+918484898144" },
       { label: "+91 97642 52188 (Manufacturing)", action: "call", phone: "+919764252188" },
+      { label: "+91 9764032929 (Spindle Repair)", action: "call", phone: "+919764032929" },
       { label: "Chat on WhatsApp", action: "whatsapp_general" },
       { label: "Go Back", next: "start" }
     ]
@@ -173,10 +173,10 @@ export default function InteractiveChatbot() {
       } else if (option.action === 'call') {
         window.location.href = `tel:${option.phone}`;
       } else if (option.action === 'whatsapp_general') {
-        window.open('https://wa.me/918484898144?text=Hi%20GPS%20Spindles!%20I%20need%20assistance.', '_blank');
+        window.open('https://wa.me/919764032929?text=Hi%20GPS%20Spindles!%20I%20need%20assistance.', '_blank');
       } else if (option.action === 'whatsapp_lead') {
         const msg = `Hi GPS Spindles! I have an inquiry.\nDetails: ${userData.details || 'N/A'}\nMy Contact Number: ${userData.phone}\n\nPlease assist me.`;
-        window.open('https://wa.me/918484898144?text=' + encodeURIComponent(msg), '_blank');
+        window.open('https://wa.me/919764032929?text=' + encodeURIComponent(msg), '_blank');
       }
 
       // Still show the user's choice in chat
@@ -285,7 +285,7 @@ export default function InteractiveChatbot() {
 
       {/* Chat Tooltip Preview (shown only when closed and showTooltip is true) */}
       {!isOpen && showTooltip && (
-        <div 
+        <div
           onClick={() => {
             setIsOpen(true);
             setUnreadCount(0);

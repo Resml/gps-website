@@ -6,9 +6,9 @@ export default function Clients() {
     <section className="section section-alt clients-section">
       <div className="container">
         <div className="text-center reveal" style={{ marginBottom: '40px' }}>
-          <div className="label" style={{ justifyContent: 'center' }}>900+ Happy Clients</div>
-          <h2>Trusted By <span style={{ color: 'var(--orange)' }}>India's Top Manufacturers</span></h2>
-          <p style={{ marginTop: '10px' }}>From Pune's auto belt to pan-India aerospace & defence facilities.</p>
+          <div className="label" style={{ justifyContent: 'center' }}>3000+ Happy Clients</div>
+          <h2>Trusted By <span style={{ color: 'var(--orange)' }}>Top Manufacturers Worldwide</span></h2>
+          <p style={{ marginTop: '10px' }}>From domestic industry leaders to international aerospace & defence facilities.</p>
         </div>
         <div className="logos-marquee reveal">
           <div className="logos-track logos-track-fwd">

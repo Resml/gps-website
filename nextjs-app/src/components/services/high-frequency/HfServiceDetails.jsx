@@ -56,7 +56,7 @@ const whyUs = [
   { icon: '💰', title: 'Cost-Effective', desc: 'Save 60–70% compared to spindle replacement costs. Affordable repair services with no compromise on quality.' },
   { icon: '🚀', title: 'Quick Turnaround', desc: 'Minimizing downtime to keep your grinding operations running smoothly with fast repair cycles.' },
   { icon: '🛡️', title: 'Quality Guarantee', desc: 'Every repaired spindle is tested and certified before delivery. Backed by our documented 1-year service warranty.' },
-  { icon: '🏆', title: '900+ Clients Served', desc: 'Trusted by leading manufacturers across Pune and Maharashtra for over 15 years of spindle excellence.' },
+  { icon: '🏆', title: '3000+ Clients Served', desc: 'Trusted by leading manufacturers across Pune and Maharashtra for over 15 years of spindle excellence.' },
 ];
 
 export default function HfServiceDetails() {
@@ -256,11 +256,11 @@ export default function HfServiceDetails() {
                 </div>
                 <div className="srv-cta-box">
                   <h4>Call or WhatsApp Us Now</h4>
-                  <a href="https://wa.me/918484898144?text=Hi%20GPS%20Spindles!%20I%20need%20high-frequency%20grinding%20spindle%20repair." target="_blank" rel="noopener noreferrer" className="btn btn-wa" style={{ marginTop: '12px', width: '100%', justifyContent: 'center' }}>
+                  <a href="https://wa.me/919764032929?text=Hi%20GPS%20Spindles!%20I%20need%20high-frequency%20grinding%20spindle%20repair." target="_blank" rel="noopener noreferrer" className="btn btn-wa" style={{ marginTop: '12px', width: '100%', justifyContent: 'center' }}>
                     Message on WhatsApp
                   </a>
-                  <a href="tel:+918484898144" className="btn btn-dark" style={{ marginTop: '10px', width: '100%', justifyContent: 'center' }}>
-                    📞 +91 8484898144
+                  <a href="tel:+919764032929" className="btn btn-dark" style={{ marginTop: '10px', width: '100%', justifyContent: 'center' }}>
+                    📞 +91 9764032929
                   </a>
                 </div>
               </div>

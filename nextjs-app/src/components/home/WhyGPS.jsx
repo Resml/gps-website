@@ -44,8 +44,8 @@ export default function WhyGPS() {
                   </svg>
                 </div>
                 <div className="why-item-text">
-                  <h4>900+ Happy Clients Across India</h4>
-                  <p>Auto, aerospace, pharma, defence, and heavy industries. From Pune to pan-India.</p>
+                  <h4>3000+ Happy Clients Worldwide</h4>
+                  <p>Auto, aerospace, pharma, defence, and heavy industries. Serving domestic and international brands.</p>
                 </div>
               </div>
               <div className="why-item">

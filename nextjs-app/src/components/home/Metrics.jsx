@@ -56,14 +56,14 @@ export default function Metrics() {
         >
           <motion.div className="metric-item" variants={itemVariants}>
             <span className="metric-num">
-              <Counter target="900" /><span className="metric-unit">+</span>
+              <Counter target="3000" /><span className="metric-unit">+</span>
             </span>
             <div className="metric-label">Happy Clients</div>
           </motion.div>
 
           <motion.div className="metric-item" variants={itemVariants}>
             <span className="metric-num">
-              <Counter target="3000" /><span className="metric-unit">+</span>
+              <Counter target="5000" /><span className="metric-unit">+</span>
             </span>
             <div className="metric-label">Projects Completed</div>
           </motion.div>

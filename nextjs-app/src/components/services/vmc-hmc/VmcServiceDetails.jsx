@@ -176,7 +176,7 @@ export default function VmcServiceDetails() {
                 </div>
                 <div className="srv-cta-box">
                   <h4>Need Urgent Spindle Repair?</h4>
-                  <a href="https://wa.me/918484898144?text=Hi%20GPS%20Spindles!%20I%20need%20urgent%20VMC%2FHMC%20spindle%20repair." target="_blank" rel="noopener noreferrer" className="btn btn-wa" style={{ marginTop: '12px', width: '100%', textAlign: 'center', justifyContent: 'center' }}>
+                  <a href="https://wa.me/919764032929?text=Hi%20GPS%20Spindles!%20I%20need%20urgent%20VMC%2FHMC%20spindle%20repair." target="_blank" rel="noopener noreferrer" className="btn btn-wa" style={{ marginTop: '12px', width: '100%', textAlign: 'center', justifyContent: 'center' }}>
                     Message us on WhatsApp
                   </a>
                 </div>

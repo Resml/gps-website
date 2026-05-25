@@ -5,7 +5,7 @@ import FloatingActions from '@/components/layout/FloatingActions';
 
 export const metadata = {
   title: 'CNC VMC HMC Spindle Repair & Reconditioning | GPS Spindles Pune',
-  description: "General Precision Spindles — Pune's #1 CNC, VMC, HMC spindle repair, reconditioning & manufacturing experts. 15+ years, 900+ clients, 1-year warranty. Call +91 8484898144",
+  description: "General Precision Spindles — Pune's #1 CNC, VMC, HMC spindle repair, reconditioning & manufacturing experts. 15+ years, 3000+ clients, 5000+ completed projects, 1-year warranty. Call +91 97642 52188 or +91 9764032929",
 };
 
 export default function RootLayout({ children }) {

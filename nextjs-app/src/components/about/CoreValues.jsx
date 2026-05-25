@@ -29,7 +29,7 @@ export default function CoreValues() {
       ),
       accent: '#34D399',
       title: 'Achievements',
-      text: '900+ clients across Maharashtra trust GPS for their most critical spindle work. Industry accolades for outstanding service and technical expertise that continues to grow.',
+      text: '3000+ clients and 5000+ completed projects trust GPS for their most critical spindle work. Industry accolades for outstanding service and technical expertise that continues to grow.',
     },
     {
       svg: (

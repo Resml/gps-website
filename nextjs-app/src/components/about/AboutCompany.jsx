@@ -18,7 +18,7 @@ export default function AboutCompany() {
               <span className="ab-headline-accent">Spindle Specialists</span>
             </h2>
             <p className="ab-lead">
-              Founded in 2017, General Precision Spindles (GPS) grew from a single spindle room into Pune's most reliable reconditioning and manufacturing partner — trusted by 900+ clients across Maharashtra's manufacturing industry.
+              Founded in 2017, General Precision Spindles (GPS) grew from a single spindle room into a reliable reconditioning and manufacturing partner — trusted by 3000+ clients and having successfully completed over 5000+ projects across the manufacturing industry.
             </p>
             <p className="ab-sub">
               Located at GKD Industrial Estate, Sinhgad Road, Pune, we specialise in the repair, rebuilding, restoration, and reconditioning of CNC, VMC, HMC, high-speed, and precision spindles. Our team of skilled technicians and engineers brings 20+ years of industry know-how to every project.
@@ -28,9 +28,9 @@ export default function AboutCompany() {
             <div className="ab-stats-row">
               {[
                 { num: '2017', label: 'Year Founded' },
-                { num: '900+', label: 'Happy Clients' },
+                { num: '3000+', label: 'Happy Clients' },
+                { num: '5000+', label: 'Projects Done' },
                 { num: '1 Yr', label: 'Warranty' },
-                { num: '24×7', label: 'Emergency' },
               ].map((s, i) => (
                 <div key={i} className="ab-stat">
                   <div className="ab-stat-num">{s.num}</div>

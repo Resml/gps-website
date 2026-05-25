@@ -179,11 +179,11 @@ export default function MillingDetails() {
 
                 <div className="srv-cta-box">
                   <h4>Need Milling Head Repairs?</h4>
-                  <a href="https://wa.me/918484898144?text=Hi%20GPS%20Spindles!%20I%20need%20Milling%20Head%20Repair%20Services." target="_blank" rel="noopener noreferrer" className="btn btn-wa" style={{ marginTop: '12px', width: '100%', textAlign: 'center', justifyContent: 'center' }}>
+                  <a href="https://wa.me/919764032929?text=Hi%20GPS%20Spindles!%20I%20need%20Milling%20Head%20Repair%20Services." target="_blank" rel="noopener noreferrer" className="btn btn-wa" style={{ marginTop: '12px', width: '100%', textAlign: 'center', justifyContent: 'center' }}>
                     Send Enquiry on WhatsApp
                   </a>
-                  <a href="tel:+918484898144" className="btn btn-dark" style={{ marginTop: '10px', width: '100%', justifyContent: 'center' }}>
-                    📞 +91 8484898144
+                  <a href="tel:+919764032929" className="btn btn-dark" style={{ marginTop: '10px', width: '100%', justifyContent: 'center' }}>
+                    📞 +91 9764032929
                   </a>
                 </div>
               </div>

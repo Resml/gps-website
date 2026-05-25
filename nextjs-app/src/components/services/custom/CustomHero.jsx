@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function CustomHero() {
   const sendWARequest = () => {
     const msg = `Hi GPS Spindles! I am looking for Customized Spindles Manufacturing. Please assist.`;
-    window.open('https://wa.me/918484898144?text=' + encodeURIComponent(msg), '_blank');
+    window.open('https://wa.me/919764032929?text=' + encodeURIComponent(msg), '_blank');
   };
 
   return (
