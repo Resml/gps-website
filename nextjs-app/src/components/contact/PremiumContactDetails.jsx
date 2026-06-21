@@ -85,11 +85,17 @@ export default function PremiumContactDetails() {
 
             {/* Email & Reviews */}
             <div className="reveal delay-4" style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-              <a href="mailto:anil.vakude@gpsspindles.net" className="btn btn-outline" style={{ flex: '1 1 auto', justifyContent: 'center', background: '#fff' }}>
+              <a href="mailto:anilvakude@gpsspindles.com" className="btn btn-outline" style={{ flex: '1 1 auto', justifyContent: 'center', background: '#fff' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: '18px', height: '18px' }}>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                anil.vakude@gpsspindles.net
+                anilvakude@gpsspindles.com
+              </a>
+              <a href="mailto:sachinkuchekar@gpsspindles.com" className="btn btn-outline" style={{ flex: '1 1 auto', justifyContent: 'center', background: '#fff' }}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: '18px', height: '18px' }}>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                sachinkuchekar@gpsspindles.com
               </a>
               <a href="https://g.page/r/CXD0M58mX6hjEBM/review" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ flex: '1 1 auto', justifyContent: 'center' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" style={{ width: '18px', height: '18px', color: '#FFF' }}>
