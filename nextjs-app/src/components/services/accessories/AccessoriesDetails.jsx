@@ -183,6 +183,9 @@ export default function AccessoriesDetails() {
                   <a href="tel:+919764252188" className="btn btn-dark" style={{ marginTop: '10px', width: '100%', justifyContent: 'center' }}>
                     📞 +91 97642 52188
                   </a>
+                  <a href="tel:+919764032929" className="btn btn-dark" style={{ marginTop: '10px', width: '100%', justifyContent: 'center' }}>
+                    📞 +91 9764032929
+                  </a>
                 </div>
               </div>
             </div>

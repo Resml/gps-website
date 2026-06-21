@@ -179,6 +179,12 @@ export default function VmcServiceDetails() {
                   <a href="https://wa.me/919764032929?text=Hi%20GPS%20Spindles!%20I%20need%20urgent%20VMC%2FHMC%20spindle%20repair." target="_blank" rel="noopener noreferrer" className="btn btn-wa" style={{ marginTop: '12px', width: '100%', textAlign: 'center', justifyContent: 'center' }}>
                     Message us on WhatsApp
                   </a>
+                  <a href="tel:+919764252188" className="btn btn-dark" style={{ marginTop: '10px', width: '100%', justifyContent: 'center' }}>
+                    📞 +91 97642 52188
+                  </a>
+                  <a href="tel:+919764032929" className="btn btn-dark" style={{ marginTop: '10px', width: '100%', justifyContent: 'center' }}>
+                    📞 +91 9764032929
+                  </a>
                 </div>
               </div>
             </div>
