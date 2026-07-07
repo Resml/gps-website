@@ -30,7 +30,7 @@ export default function OurSetup() {
 
           {/* Feature — left tall column */}
           <div className="ab-mag-hero reveal">
-            <img src={galleryImages[0].src} alt={galleryImages[0].caption} />
+            <img src={galleryImages[0].src} alt={galleryImages[0].caption} loading="lazy" />
             <div className="ab-mag-hover-cap">
               <span className="ab-mag-tag">{galleryImages[0].tag}</span>
               <span className="ab-mag-cap">{galleryImages[0].caption}</span>
@@ -40,7 +40,7 @@ export default function OurSetup() {
           {/* 5 smaller cells */}
           {galleryImages.slice(1).map((img, i) => (
             <div key={i} className={`ab-mag-cell reveal delay-${i + 1}`}>
-              <img src={img.src} alt={img.caption} />
+              <img src={img.src} alt={img.caption} loading="lazy" />
               <div className="ab-mag-hover-cap">
                 <span className="ab-mag-tag">{img.tag}</span>
                 <span className="ab-mag-cap">{img.caption}</span>
