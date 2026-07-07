@@ -1,3 +1,4 @@
+// Webhook trigger test
 export default function OurSetup() {
   const galleryImages = [
     { src: '/images/ws-g.jpg', caption: 'Main Workshop Floor', tag: 'Workshop' },
