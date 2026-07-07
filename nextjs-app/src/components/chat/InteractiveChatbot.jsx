@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 // Comprehensive Conversational Flow
 const chatFlow = {
   start: {
-    message: "Hi there! 👋 Welcome to GPS Spindles. I'm your virtual assistant. How can I help you today?",
+    message: "Hi! Welcome to GPS Spindles. I'm your virtual assistant. How can I help you today?",
     options: [
       { label: "Our Services", next: "services" },
       { label: "Brands We Repair", next: "brands" },

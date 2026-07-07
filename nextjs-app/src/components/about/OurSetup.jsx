@@ -1,11 +1,11 @@
 export default function OurSetup() {
   const galleryImages = [
-    { src: '/images/ws-g.jpg', caption: 'Main Workshop Floor',     tag: 'Workshop'  },
-    { src: '/images/ws-h.jpg', caption: 'Spindle Assembly Area',   tag: 'Assembly'  },
-    { src: '/images/ws-i.jpg', caption: 'Quality Testing Lab',     tag: 'Testing'   },
-    { src: '/images/ws-j.jpg', caption: 'Precision Tooling Room',  tag: 'Tooling'   },
-    { src: '/images/ws-k.jpg', caption: 'Component Storage & Prep',tag: 'Storage'   },
-    { src: '/images/ws-l.jpg', caption: 'Final Inspection & QC',   tag: 'QC'        },
+    { src: '/images/ws-g.jpg', caption: 'Main Workshop Floor', tag: 'Workshop' },
+    { src: '/images/ws-h.jpg', caption: 'Spindle Assembly Area', tag: 'Assembly' },
+    { src: '/images/ws-i.jpg', caption: 'Quality Testing Lab', tag: 'Testing' },
+    { src: '/images/ws-j.jpg', caption: 'Precision Tooling Room', tag: 'Tooling' },
+    { src: '/images/ws-k.jpg', caption: 'Component Storage & Prep', tag: 'Storage' },
+    { src: '/images/ws-l.jpg', caption: 'Final Inspection & QC', tag: 'QC' },
   ];
 
   return (
@@ -36,18 +36,16 @@ export default function OurSetup() {
             </div>
           </div>
 
-          {/* Right — 5 smaller cells in 2-col sub-grid */}
-          <div className="ab-mag-right">
-            {galleryImages.slice(1).map((img, i) => (
-              <div key={i} className={`ab-mag-cell reveal delay-${i + 1}`}>
-                <img src={img.src} alt={img.caption} />
-                <div className="ab-mag-hover-cap">
-                  <span className="ab-mag-tag">{img.tag}</span>
-                  <span className="ab-mag-cap">{img.caption}</span>
-                </div>
+          {/* 5 smaller cells */}
+          {galleryImages.slice(1).map((img, i) => (
+            <div key={i} className={`ab-mag-cell reveal delay-${i + 1}`}>
+              <img src={img.src} alt={img.caption} />
+              <div className="ab-mag-hover-cap">
+                <span className="ab-mag-tag">{img.tag}</span>
+                <span className="ab-mag-cap">{img.caption}</span>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
 
         {/* ── Fact chips ── */}

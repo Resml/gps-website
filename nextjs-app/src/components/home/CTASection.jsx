@@ -2,10 +2,10 @@ import Link from 'next/link';
 
 export default function CTASection() {
   return (
-    <section className="cta-dark">
+    <section className="cta-section">
       <div className="container">
         <div className="reveal">
-          <div className="label" style={{ justifyContent: 'center', color: '#FDBA74' }}>Ready to Talk?</div>
+          <div className="label" style={{ justifyContent: 'center' }}>Ready to Talk?</div>
           <h2>Stop Losing Production Time.<br /><span>Get Your Spindle Fixed Today.</span></h2>
           <p>WhatsApp us for a free assessment. We respond within 15 minutes during business hours.</p>
           <div className="btns">
@@ -16,13 +16,13 @@ export default function CTASection() {
               </svg>
               WhatsApp — Free Assessment
             </a>
-            <a href="tel:+919764252188" className="btn btn-outline-white">
+            <a href="tel:+919764252188" className="btn btn-outline-dark">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               Call +91 97642 52188
             </a>
-            <a href="tel:+919764032929" className="btn btn-outline-white">
+            <a href="tel:+919764032929" className="btn btn-outline-dark">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>

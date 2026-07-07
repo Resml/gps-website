@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="hero-slides">
         <div className="hero-slide active">
           <video autoPlay muted loop playsInline style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}>
-            <source src="/images/hero-bg.mp4" type="video/mp4" />
+            <source src="/images/cnc-v.mp4" type="video/mp4" />
           </video>
         </div>
       </div>

@@ -175,10 +175,6 @@ export default function Header() {
                   <div className="dd-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg></div>
                   <div className="dd-text"><span className="dd-title">Industries We Serve</span><span className="dd-desc">Automotive, aerospace, defense & more</span></div>
                 </Link>
-                <Link href="/news-letters" className="dd-item">
-                  <div className="dd-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" /></svg></div>
-                  <div className="dd-text"><span className="dd-title">News Letters</span><span className="dd-desc">Tips, case studies & industry updates</span></div>
-                </Link>
               </div>
             </li>
             <li><Link href="/gps-contact">Contact</Link></li>

@@ -56,48 +56,84 @@ export default function PremiumContactDetails() {
               </div>
             </div>
 
-            {/* Sub-cards Container */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
+            {/* Sub-cards Container (Phones) */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '24px' }}>
 
               {/* Manufacturing Contact */}
               <a href="tel:+919764252188" className="reveal delay-2" style={{
-                background: '#fff', borderRadius: '20px', padding: '24px', border: '1px solid var(--border)', transition: 'all 0.3s ease', display: 'block'
+                background: '#fff', borderRadius: '20px', padding: '24px', border: '1px solid var(--border)', transition: 'all 0.3s ease', display: 'block', textDecoration: 'none'
               }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-4px)'} onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
-                <h5 style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--orange)', marginBottom: '12px', fontWeight: 700 }}>Manufacturing</h5>
-                <h4 style={{ fontSize: '18px', color: 'var(--navy)', marginBottom: '4px', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: '20px', height: '20px', color: 'var(--orange)' }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                <h5 style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--orange)', marginBottom: '12px', fontWeight: 700 }}>Manufacturing Phone</h5>
+                <h4 style={{ fontSize: '17px', color: 'var(--navy)', marginBottom: '4px', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: '20px', height: '20px', color: 'var(--orange)', flexShrink: 0 }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                   +91 97642 52188
                 </h4>
               </a>
 
               {/* Reconditioning Contact */}
               <a href="tel:+919764032929" className="reveal delay-3" style={{
-                background: '#fff', borderRadius: '20px', padding: '24px', border: '1px solid var(--border)', transition: 'all 0.3s ease', display: 'block'
+                background: '#fff', borderRadius: '20px', padding: '24px', border: '1px solid var(--border)', transition: 'all 0.3s ease', display: 'block', textDecoration: 'none'
               }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-4px)'} onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
-                <h5 style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--orange)', marginBottom: '12px', fontWeight: 700 }}>Reconditioning</h5>
-                <h4 style={{ fontSize: '18px', color: 'var(--navy)', marginBottom: '4px', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: '20px', height: '20px', color: 'var(--orange)' }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                <h5 style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--orange)', marginBottom: '12px', fontWeight: 700 }}>Reconditioning Phone</h5>
+                <h4 style={{ fontSize: '17px', color: 'var(--navy)', marginBottom: '4px', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: '20px', height: '20px', color: 'var(--orange)', flexShrink: 0 }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                   +91 9764032929
                 </h4>
               </a>
 
             </div>
 
-            {/* Email & Reviews */}
-            <div className="reveal delay-4" style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-              <a href="mailto:anilvakude@gpsspindles.com" className="btn-email" style={{ flex: '1 1 auto', justifyContent: 'center' }}>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: '18px', height: '18px' }}>
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                anilvakude@gpsspindles.com
+            {/* Sub-cards Container (Emails) */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '24px' }}>
+
+              {/* Manufacturing Email */}
+              <a href="mailto:anilvakude@gpsspindles.com" className="reveal delay-4" style={{
+                background: '#fff', borderRadius: '20px', padding: '24px', border: '1px solid var(--border)', transition: 'all 0.3s ease', display: 'block', textDecoration: 'none'
+              }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-4px)'} onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
+                <h5 style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--orange)', marginBottom: '12px', fontWeight: 700 }}>Manufacturing Email</h5>
+                <h4 style={{ fontSize: '15px', color: 'var(--navy)', marginBottom: '4px', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px', wordBreak: 'break-all' }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: '18px', height: '18px', color: 'var(--orange)', flexShrink: 0 }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 022 2z" /></svg>
+                  anilvakude@gpsspindles.com
+                </h4>
               </a>
-              <a href="mailto:sachinkuchekar@gpsspindles.com" className="btn-email" style={{ flex: '1 1 auto', justifyContent: 'center' }}>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: '18px', height: '18px' }}>
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                sachinkuchekar@gpsspindles.com
+
+              {/* Reconditioning Email */}
+              <a href="mailto:sachinkuchekar@gpsspindles.com" className="reveal delay-4" style={{
+                background: '#fff', borderRadius: '20px', padding: '24px', border: '1px solid var(--border)', transition: 'all 0.3s ease', display: 'block', textDecoration: 'none'
+              }} onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-4px)'} onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}>
+                <h5 style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--orange)', marginBottom: '12px', fontWeight: 700 }}>Reconditioning Email</h5>
+                <h4 style={{ fontSize: '15px', color: 'var(--navy)', marginBottom: '4px', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px', wordBreak: 'break-all' }}>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: '18px', height: '18px', color: 'var(--orange)', flexShrink: 0 }}><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 022 2z" /></svg>
+                  sachinkuchekar@gpsspindles.com
+                </h4>
               </a>
-              <a href="https://g.page/r/CXD0M58mX6hjEBM/review" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ flex: '1 1 auto', justifyContent: 'center' }}>
+
+            </div>
+
+            {/* Google Reviews Button */}
+            <div className="reveal delay-5" style={{ display: 'flex' }}>
+              <a href="https://g.page/r/CXD0M58mX6hjEBM/review" target="_blank" rel="noopener noreferrer" 
+                style={{ 
+                  flex: '1 1 auto', 
+                  justifyContent: 'center', 
+                  borderRadius: '20px', 
+                  padding: '16px 28px',
+                  background: 'var(--navy)',
+                  color: '#fff',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  fontSize: '15px',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  border: 'none',
+                  textDecoration: 'none',
+                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                  boxShadow: 'var(--shadow-sm)'
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background = 'var(--orange)'; e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 20px rgba(234, 88, 12, 0.15)'; }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'var(--navy)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'var(--shadow-sm)'; }}
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" style={{ width: '18px', height: '18px', color: '#FFF' }}>
                   <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.858 1.4-8.168-5.934-5.787 8.2-1.192L12 .587z" />
                 </svg>
@@ -109,10 +145,10 @@ export default function PremiumContactDetails() {
 
           {/* Right Column: Embedded Map */}
           <div className="reveal delay-2" style={{
-            background: 'var(--navy)', borderRadius: '24px', padding: '8px', position: 'relative', overflow: 'hidden', boxShadow: '0 20px 40px rgba(15,23,42,0.15)', display: 'flex', flexDirection: 'column'
+            background: '#fff', borderRadius: '24px', padding: '8px', border: '1px solid var(--border)', position: 'relative', overflow: 'hidden', boxShadow: '0 20px 40px rgba(15,23,42,0.03)', display: 'flex', flexDirection: 'column'
           }}>
             <div style={{ padding: '20px 24px' }}>
-              <h4 style={{ color: '#fff', fontSize: '20px', margin: 0, display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <h4 style={{ color: 'var(--navy)', fontSize: '20px', margin: 0, display: 'flex', alignItems: 'center', gap: '10px', fontWeight: 800 }}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="var(--orange)" style={{ width: '24px', height: '24px' }}>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -120,9 +156,9 @@ export default function PremiumContactDetails() {
                 Navigate to Facility
               </h4>
             </div>
-            <div style={{ flex: 1, borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}>
+            <div style={{ flex: 1, borderRadius: '16px', overflow: 'hidden', border: '1px solid var(--border)' }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15139.757876805097!2d73.8055627!3d18.4300431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2950cd12c3f19%3A0x6bcfd36a31c463f!2sGeneral%20Precision%20Spindles!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.0!2d73.7935774!3d18.4578573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2952c53d84e9f%3A0x63a85f269f33f470!2sGeneral%20Precision%20Spindles!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '320px', display: 'block' }}

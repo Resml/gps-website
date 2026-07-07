@@ -64,7 +64,6 @@ export default function Footer() {
                 <li><Link href="/about-gps"><ChevronIcon />About Us</Link></li>
                 <li><Link href="/brands-we-repair"><ChevronIcon />Brands We Repair</Link></li>
                 <li><Link href="/industries-we-serve"><ChevronIcon />Industries We Serve</Link></li>
-                <li><Link href="/news-letters"><ChevronIcon />News Letters</Link></li>
                 <li><Link href="/gps-contact"><ChevronIcon />Contact</Link></li>
               </ul>
             </div>
@@ -109,11 +108,11 @@ export default function Footer() {
                   </p>
                 </li>
               </ul>
-              <div style={{ marginTop: '16px', borderRadius: '8px', overflow: 'hidden' }}>
+              <div style={{ marginTop: '16px', borderRadius: '12px', overflow: 'hidden', border: '1px solid rgba(255, 255, 255, 0.1)', boxShadow: '0 10px 30px rgba(0,0,0,0.2)' }}>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15139.757876805097!2d73.8055627!3d18.4300431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2950cd12c3f19%3A0x6bcfd36a31c463f!2sGeneral%20Precision%20Spindles!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin"
-                  width="100%" height="120" style={{ border: 0 }} allowFullScreen="" loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade">
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.0!2d73.7935774!3d18.4578573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2952c53d84e9f%3A0x63a85f269f33f470!2sGeneral%20Precision%20Spindles!5e0!3m2!1sen!2sin!4v1714000000000!5m2!1sen!2sin"
+                  width="100%" height="170" style={{ border: 0, display: 'block' }} allowFullScreen="" loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade" title="GPS Spindles Location Map">
                 </iframe>
               </div>
             </div>
