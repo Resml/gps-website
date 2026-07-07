@@ -19,8 +19,7 @@ export default function Gallery() {
           </div>
           <div className="gallery-item video-item">
             <video autoPlay muted loop playsInline style={{ width: '100%', height: '100%', objectFit: 'cover' }}>
-              <source src="/images/IMG_5140.MOV" type="video/quicktime" />
-              <source src="/images/IMG_5140.MOV" type="video/mp4" />
+              <source src="/images/IMG_5140.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <div className="gallery-item-overlay">
