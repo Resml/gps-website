@@ -118,23 +118,23 @@ export default function PremiumContactDetails() {
                   justifyContent: 'center', 
                   borderRadius: '20px', 
                   padding: '16px 28px',
-                  background: 'var(--navy)',
-                  color: '#fff',
+                  background: '#ffffff',
+                  color: '#0F172A',
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '8px',
                   fontSize: '15px',
                   fontWeight: 700,
                   cursor: 'pointer',
-                  border: 'none',
+                  border: '1px solid #0F172A',
                   textDecoration: 'none',
                   transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                   boxShadow: 'var(--shadow-sm)'
                 }}
-                onMouseEnter={e => { e.currentTarget.style.background = 'var(--orange)'; e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 20px rgba(234, 88, 12, 0.15)'; }}
-                onMouseLeave={e => { e.currentTarget.style.background = 'var(--navy)'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'var(--shadow-sm)'; }}
+                onMouseEnter={e => { e.currentTarget.style.background = '#f8fafc'; e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 6px 15px rgba(0, 0, 0, 0.05)'; }}
+                onMouseLeave={e => { e.currentTarget.style.background = '#ffffff'; e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'var(--shadow-sm)'; }}
               >
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" style={{ width: '18px', height: '18px', color: '#FFF' }}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" style={{ width: '18px', height: '18px', color: '#EAB308' }}>
                   <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.858 1.4-8.168-5.934-5.787 8.2-1.192L12 .587z" />
                 </svg>
                 Read our Google Reviews
