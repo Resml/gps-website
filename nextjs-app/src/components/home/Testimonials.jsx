@@ -13,18 +13,21 @@ const testimonials = [
     name: 'Rajesh Patil',
     role: 'Production Head — Auto Component, Pune',
     avatar: 'R',
+    image: '/images/rajesh_patil.png',
   },
   {
     text: '"We send all our high-frequency grinding spindles exclusively to GPS. Nobody else in Pune handles 40,000 RPM with this level of care. The written inspection report they provide is excellent for our ISO audits."',
     name: 'Amol Deshmukh',
     role: 'Maintenance Manager — Medical Devices Mfr.',
     avatar: 'A',
+    image: '/images/amol_deshmukh.png',
   },
   {
     text: '"Reliable, fast, and technically sound. GPS Spindles repaired 3 of our Mazak HMC spindles in 2024. Cost was 40% less than OEM replacement and performance is identical. Highly recommended."',
     name: 'Vikram Sharma',
     role: 'Plant Manager — Aerospace Sub-contractor',
     avatar: 'V',
+    image: '/images/vikram_sharma.png',
   },
 ];
 
@@ -44,7 +47,13 @@ export default function Testimonials() {
               </div>
               <p className="testi-text">{t.text}</p>
               <div className="testi-author">
-                <div className="testi-avatar">{t.avatar}</div>
+                <div className="testi-avatar">
+                  {t.image ? (
+                    <img src={t.image} alt={t.name} />
+                  ) : (
+                    t.avatar
+                  )}
+                </div>
                 <div className="testi-info">
                   <strong>{t.name}</strong>
                   <span>{t.role}</span>
